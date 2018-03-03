@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         outFaro.outFaro(newDeckOrder.getBicycleDeckOrder(), numberOfFaros);
 
 
+
         if (outFaro.getOneShuffle().contains(choosenCard)) {
             cardAfterOneShuffle += outFaro.getOneShuffle().indexOf(choosenCard) + 1;
 

@@ -3,4 +3,5 @@
     <string name="please_enter_a_card">Please enter a card:</string>
     <string name="please_enter_number_of_shuffles">Please enter number of shuffles:</string>
     <string name="track_card">Track Card!</string>
+    <string name="your_card_is_at_position">Your Card Is At Position:</string>
 </resources>
