@@ -8,4 +8,4 @@ King of Spades
 
 The suites must be capitalized. This is a work in progress. 
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/Screenshot_20180303-155201.png)
+![alt text](https://raw.githubusercontent.com/Ben7217/FaroTrackerAndroidApp/main/path/to/Screenshot_20180303-155201.png)
