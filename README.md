@@ -7,5 +7,4 @@ King of Spades
 2 of Hearts 
 
 The suites must be capitalized. This is a work in progress. 
-
-![alt text](https://raw.githubusercontent.com/Ben7217/FaroTrackerAndroidApp/master/path/to/Screenshot_20180303-155201.png)
+![Screenshot](Screenshot_20180303-155201.png)
