@@ -9,9 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
-    private Button trackerButton;
-    private TextView shuffleResults;
+    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +17,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
+
+    //******
+    //  showResults() lets us save our EditText fields into string variables, as well as
+    //creates a new intent object, a NewDeckOrder object, and an OutFaro Object.
+    //It also contains some business logic that lets us find out if the chosen
+    //card exists in the deck and if so, at which position it exists after the shuffles
+    //have taken place. It then displays this position data in a new activity using our
+    //intent object and invoking the putExtra method.
+    //*******
 
     public void showResults(View view) {
 
@@ -28,16 +35,14 @@ public class MainActivity extends AppCompatActivity {
         EditText inputShuffles = findViewById(R.id.inputShuffles);
         String choosenShuffles = inputShuffles.getText().toString();
 
-        int cardAfterOneShuffle = 0;
+        //this variable will hold the position value after the deck has been
+        //shuffled x amount of times.
+        int cardAfterShuffles = 0;
 
-
+        //Creating a new deck order in an American playing card order.
         NewDeckOrder newDeckOrder = new NewDeckOrder();
         newDeckOrder.setBicycleDeckOrder(newDeckOrder.americanNewDeckOrder());
 
-        // User input
-        System.out.println("\nPlease enter the card you wish to track: ");
-
-        System.out.println("\nHow many out Faro's would you like to shuffle?");
         int numberOfFaros = Integer.valueOf(choosenShuffles);
 
 
@@ -48,20 +53,26 @@ public class MainActivity extends AppCompatActivity {
 //        }
 //        System.out.println("\n" + choosenCard + " starting position is " + cardsPosition + ".");
 
+        //creating new OutFaro object and passing in our new deck order and chosen number
+        //of shuffles as arguments.
         OutFaro outFaro = new OutFaro();
-
         outFaro.outFaro(newDeckOrder.getBicycleDeckOrder(), numberOfFaros);
 
 
+        //this statement handles the capitalization of suites or values.
         choosenCard = choosenCard.toLowerCase();
 
+        //if the card is found, we save the result to cardAfterShuffles
         if (outFaro.results().contains(choosenCard)) {
-            cardAfterOneShuffle += outFaro.results().indexOf(choosenCard) + 1;
+            cardAfterShuffles += outFaro.results().indexOf(choosenCard) + 1;
 
         }
 
 
-        intent.putExtra(EXTRA_MESSAGE, String.valueOf(cardAfterOneShuffle));
+        //calling our intent object and invoking the putExtra method to display
+        //the value to our DisplayMessageActivity.
+        intent.putExtra(EXTRA_MESSAGE, String.valueOf(cardAfterShuffles));
+        //displaying the secondary activity
         startActivity(intent);
     }
 }
