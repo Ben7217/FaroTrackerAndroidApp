@@ -13,7 +13,7 @@ public class OutFaro {
     private int shuffleCounter;
 
 
-    public ArrayList<String> getOneShuffle() {
+    public ArrayList<String> results() {
         return shuffleResults;
     }
 

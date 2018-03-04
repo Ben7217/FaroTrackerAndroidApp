@@ -12,11 +12,11 @@ public class NewDeckOrder {
 
   public ArrayList<String> americanNewDeckOrder() {
 
-        String[] suitesFirstHalf = {"Hearts", "Clubs"};
-        String[] valuesFirstHalf = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
+        String[] suitesFirstHalf = {"hearts", "clubs"};
+        String[] valuesFirstHalf = {"ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king"};
 
-        String[] suitesSecondHalf = {"Diamonds", "Spades"};
-        String[] valuesSecondHalf = {"King", "Queen", "Jack", "10", "9", "8", "7", "6", "5", "4", "3", "2", "Ace"};
+        String[] suitesSecondHalf = {"diamonds", "spades"};
+        String[] valuesSecondHalf = {"king", "queen", "jack", "10", "9", "8", "7", "6", "5", "4", "3", "2", "ace"};
 
         bicycleDeckOrder = new ArrayList<>();
 

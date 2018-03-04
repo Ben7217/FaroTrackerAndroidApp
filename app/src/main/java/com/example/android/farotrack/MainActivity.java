@@ -1,6 +1,5 @@
 package com.example.android.farotrack;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -54,9 +53,10 @@ public class MainActivity extends AppCompatActivity {
         outFaro.outFaro(newDeckOrder.getBicycleDeckOrder(), numberOfFaros);
 
 
+        choosenCard = choosenCard.toLowerCase();
 
-        if (outFaro.getOneShuffle().contains(choosenCard)) {
-            cardAfterOneShuffle += outFaro.getOneShuffle().indexOf(choosenCard) + 1;
+        if (outFaro.results().contains(choosenCard)) {
+            cardAfterOneShuffle += outFaro.results().indexOf(choosenCard) + 1;
 
         }
 
