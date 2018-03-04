@@ -9,3 +9,5 @@ King of Hearts
 9 of Clubs
 etc.
 ![Screenshot](Screenshot_20180303-155201.png)
+![Screenshot](Screenshot_20180303-155221.png)
+![Screenshot](Screenshot_20180303-155225.png)
