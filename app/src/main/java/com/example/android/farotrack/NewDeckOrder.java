@@ -8,9 +8,9 @@ import java.util.ArrayList;
 
 public class NewDeckOrder {
 
-    private ArrayList<String> bicycleDeckOrder;
+    private static ArrayList<String> bicycleDeckOrder;
 
-  public ArrayList<String> americanNewDeckOrder() {
+  public static ArrayList<String> americanNewDeckOrder() {
 
         String[] suitesFirstHalf = {"hearts", "clubs"};
         String[] valuesFirstHalf = {"ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king"};

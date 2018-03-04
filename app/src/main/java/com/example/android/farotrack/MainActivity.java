@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Creating a new deck order in an American playing card order.
         NewDeckOrder newDeckOrder = new NewDeckOrder();
-        newDeckOrder.setBicycleDeckOrder(newDeckOrder.americanNewDeckOrder());
+        newDeckOrder.setBicycleDeckOrder(NewDeckOrder.americanNewDeckOrder());
 
         int numberOfFaros = Integer.valueOf(choosenShuffles);
 
