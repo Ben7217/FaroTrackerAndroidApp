@@ -1,10 +1,11 @@
 # FaroTrackerAndroidApp
 
-You must enter in the cards as a number for the number cards and as a captalized word for the courts so for instance: 
-King of Hearts
-King of Spades 
-5 of Diamonds
-2 of Hearts 
+Enter in a card and value like this:
 
-The suites must be capitalized. This is a work in progress. 
+7 of hearts
+8 of hearts
+king of spades
+King of Hearts
+9 of Clubs
+etc.
 ![Screenshot](Screenshot_20180303-155201.png)
